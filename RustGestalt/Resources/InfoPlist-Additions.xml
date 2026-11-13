@@ -1,0 +1,14 @@
+<!--
+Add these keys to your Xcode project's Info.plist (or the "Info" tab of your target's
+build settings, which is where modern Xcode templates keep them by default).
+
+Both are required or the Pairing screen will crash/fail silently at runtime:
+- NSCameraUsageDescription: required to scan the Desktop Companion's QR code.
+- NSLocalNetworkUsageDescription: required because the paired connection talks to the
+  Companion over your local Wi-Fi/USB-shared network, not the public internet.
+-->
+<key>NSCameraUsageDescription</key>
+<string>RustGestalt needs the camera to scan the pairing code shown by the Desktop Companion app.</string>
+
+<key>NSLocalNetworkUsageDescription</key>
+<string>RustGestalt connects to the Desktop Companion app over your local network to read and apply device settings.</string>

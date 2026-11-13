@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060F9DDC1CA42E7959A0AD5D /* TweakRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6D7885C1DF11E3309F8CC /* TweakRow.swift */; };
+		1217CF3D2E755B8758600615 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCFB03B9D6BF34443477CC6 /* SettingsView.swift */; };
+		2D95E4DB62C4E7FE34850135 /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC71FF9A514804DCE0363812 /* PairingView.swift */; };
+		489F7E20A72484CD8555217C /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8D57A8341135AE0181638 /* QRScannerView.swift */; };
+		60AD7FFFE3D1739FDFEF7A5A /* TweakLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD07E38AF95C4878103F50E /* TweakLibraryView.swift */; };
+		93BA27C54ED6AF491EA6599B /* Tweak.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14BD9C1A6F0CD85660F37C1 /* Tweak.swift */; };
+		9846887556FF52622963C8AD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7501637CA125A8BF7C00259C /* AppState.swift */; };
+		A111A4DFED49AD87138B0004 /* PairingPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B078C8E410D37CF73ECFA8B /* PairingPayload.swift */; };
+		AAC8F2C04E8DFB2315409F77 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CDBDC6DC23FDD4B9BAA4A7 /* RootView.swift */; };
+		D21B56E0A48E49A7913DCB71 /* CreatorStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B56E0A48E49A7913DCB70 /* CreatorStudioView.swift */; };
+		B045A0E52FF8DFB2D131EBE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E4D073B9F7C52A05BE17EC /* HomeView.swift */; };
+		BCA5155530A89210C1649342 /* TweakDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB74CCDF6E646CA76513295 /* TweakDetailView.swift */; };
+		C2BEB0A13646DB198814C495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7466D8C936D5E57CF818B755 /* Assets.xcassets */; };
+		E53BD4D85D633461F53A9817 /* LogoPacks in Resources */ = {isa = PBXBuildFile; fileRef = F6FB5283F34A1992659E4403 /* LogoPacks */; };
+		C9CA960F5730A3278F558ABB /* RustGestaltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449CD2491B2679C4C97050B3 /* RustGestaltApp.swift */; };
+		CD46610A6312CDDBF0C1EA2D /* PairingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1202068478C3D4EC824BDC /* PairingManager.swift */; };
+		D0F4E157621BFE50B7817093 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C19118406E00702F610E1A /* Theme.swift */; };
+		21BB5B6F32C04D8297ED82E4 /* Capabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9237D423040E889D414A2 /* Capabilities.swift */; };
+		2DB82D3AF6634D00BD1E7865 /* DeviceBoundPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63E97D34BA448AA06D3B3B /* DeviceBoundPlist.swift */; };
+		3CC44AE48BF341C2A71C6487 /* DeviceCacheOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541D3A526864911AAB57712 /* DeviceCacheOptions.swift */; };
+		08F025FF5DD24E9CAAC94E6A /* DevicePlistIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281260F2BD2E44388DAFE054 /* DevicePlistIdentity.swift */; };
+		41C0BF24500D43259A8A2D1B /* GestaltDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BB861A5634EB999EBECC3 /* GestaltDocument.swift */; };
+		B1EDBF1661794179BA7E2D0B /* GestaltManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321385C4AD5E46D8A2B43FE3 /* GestaltManager.swift */; };
+		7C67D38C900F45C68A80B8E5 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54895823FD964D9A86B90818 /* Localization.swift */; };
+		8904A5C0369E43F79A8EDA7A /* MobileGestaltCacheLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442857F84D684B83864475F8 /* MobileGestaltCacheLayout.swift */; };
+		4FD0BF4DE21B4CA297331DBA /* SharedImportQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF5187358746129E8D0C60 /* SharedImportQueue.swift */; };
+		BA0A60505EF34C45A8DA2C9E /* SharedPlistInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758277FAC1B42C7987D8C6D /* SharedPlistInbox.swift */; };
+		DD75DA4C18AC4984BF142AE1 /* TemporaryExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E415CC8D1DB446878CA92F30 /* TemporaryExport.swift */; };
+		77FAA18FE72E4EA1A69B6732 /* VersionSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2B35B8B86424A9AC163C4 /* VersionSupport.swift */; };
+		0073FEFB2FD049BC99BCE7C7 /* worse_query.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D46921845544F8992BE379 /* worse_query.m */; };
+		3A6AE876AA334E54900F8DB0 /* GXCacheDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB174A10E184C6C955A3AF1 /* GXCacheDirectory.m */; };
+		5F1593C0807841F38C70245F /* GXDeviceIdentity.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA13FA8F4940369C9B5BDB /* GXDeviceIdentity.m */; };
+		E1FE0F7605D841DEA7B40C38 /* GXEntitlementsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 36028F0311AF4057A1F18291 /* GXEntitlementsReader.m */; };
+		F4E4A0A84C2247BCA5EE07CE /* GXMobileGestaltImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E7972ED76E114CC6893AD1F1 /* GXMobileGestaltImage.m */; };
+		7BA38AF3E5F546AE96A217ED /* MobileGestaltStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3F54FF0764A0B93FDBF70 /* MobileGestaltStudioView.swift */; };
+		A407CFF217FC4FED87F49D8E /* GestaltX License in Resources */ = {isa = PBXBuildFile; fileRef = 9E39533067ED4885A0F132BA /* LICENSE */; };
+		4C83AD4C96614BA29C326A5E /* GestaltX source notice in Resources */ = {isa = PBXBuildFile; fileRef = 159FEE742AE34648AE134281 /* UPSTREAM-NOTICE.md */; };
+		A88C2C3FF4A645B49D7D9B21 /* RetroLaunchStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81789D1E9F643A99FCB1CCB /* RetroLaunchStudioView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02D6D7885C1DF11E3309F8CC /* TweakRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweakRow.swift; sourceTree = "<group>"; };
+		04A8D57A8341135AE0181638 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		1BD07E38AF95C4878103F50E /* TweakLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweakLibraryView.swift; sourceTree = "<group>"; };
+		449CD2491B2679C4C97050B3 /* RustGestaltApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustGestaltApp.swift; sourceTree = "<group>"; };
+		4940B9AB413B4AA552F1CCE2 /* InfoPlist-Additions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "InfoPlist-Additions.xml"; sourceTree = "<group>"; };
+		4B078C8E410D37CF73ECFA8B /* PairingPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingPayload.swift; sourceTree = "<group>"; };
+		58E4D073B9F7C52A05BE17EC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7466D8C936D5E57CF818B755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6FB5283F34A1992659E4403 /* LogoPacks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LogoPacks; sourceTree = "<group>"; };
+		7501637CA125A8BF7C00259C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		82CDBDC6DC23FDD4B9BAA4A7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		D21B56E0A48E49A7913DCB70 /* CreatorStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorStudioView.swift; sourceTree = "<group>"; };
+		8B1202068478C3D4EC824BDC /* PairingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingManager.swift; sourceTree = "<group>"; };
+		8CB74CCDF6E646CA76513295 /* TweakDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweakDetailView.swift; sourceTree = "<group>"; };
+		8E2A59E3095742F355AB494B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		95C19118406E00702F610E1A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B14BD9C1A6F0CD85660F37C1 /* Tweak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweak.swift; sourceTree = "<group>"; };
+		CC71FF9A514804DCE0363812 /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
+		EBCFB03B9D6BF34443477CC6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F5BF48AA40CAD7891EB709FC /* RustGestalt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustGestalt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC9237D423040E889D414A2 /* Capabilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capabilities.swift"; sourceTree = "<group>"; };
+		7E63E97D34BA448AA06D3B3B /* DeviceBoundPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceBoundPlist.swift"; sourceTree = "<group>"; };
+		E541D3A526864911AAB57712 /* DeviceCacheOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceCacheOptions.swift"; sourceTree = "<group>"; };
+		281260F2BD2E44388DAFE054 /* DevicePlistIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicePlistIdentity.swift"; sourceTree = "<group>"; };
+		313BB861A5634EB999EBECC3 /* GestaltDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GestaltDocument.swift"; sourceTree = "<group>"; };
+		321385C4AD5E46D8A2B43FE3 /* GestaltManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GestaltManager.swift"; sourceTree = "<group>"; };
+		54895823FD964D9A86B90818 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localization.swift"; sourceTree = "<group>"; };
+		442857F84D684B83864475F8 /* MobileGestaltCacheLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileGestaltCacheLayout.swift"; sourceTree = "<group>"; };
+		13DF5187358746129E8D0C60 /* SharedImportQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedImportQueue.swift"; sourceTree = "<group>"; };
+		B758277FAC1B42C7987D8C6D /* SharedPlistInbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedPlistInbox.swift"; sourceTree = "<group>"; };
+		E415CC8D1DB446878CA92F30 /* TemporaryExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TemporaryExport.swift"; sourceTree = "<group>"; };
+		ABC2B35B8B86424A9AC163C4 /* VersionSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VersionSupport.swift"; sourceTree = "<group>"; };
+		D7D46921845544F8992BE379 /* worse_query.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "worse_query.m"; sourceTree = "<group>"; };
+		FDB174A10E184C6C955A3AF1 /* GXCacheDirectory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GXCacheDirectory.m"; sourceTree = "<group>"; };
+		EDEA13FA8F4940369C9B5BDB /* GXDeviceIdentity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GXDeviceIdentity.m"; sourceTree = "<group>"; };
+		36028F0311AF4057A1F18291 /* GXEntitlementsReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GXEntitlementsReader.m"; sourceTree = "<group>"; };
+		E7972ED76E114CC6893AD1F1 /* GXMobileGestaltImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GXMobileGestaltImage.m"; sourceTree = "<group>"; };
+		0FC3F54FF0764A0B93FDBF70 /* MobileGestaltStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileGestaltStudioView.swift"; sourceTree = "<group>"; };
+		3E78F20E11EF4BCB91B042FD /* worse_query.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "worse_query.h"; sourceTree = "<group>"; };
+		D515B6A7FBE34AA9BEE7C96A /* GXCacheDirectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXCacheDirectory.h"; sourceTree = "<group>"; };
+		65F428C3A7EB42699F64507B /* GXDeviceIdentity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXDeviceIdentity.h"; sourceTree = "<group>"; };
+		F6D98CC244C2443996304205 /* GXEntitlementsReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXEntitlementsReader.h"; sourceTree = "<group>"; };
+		3AA33586F25841CF9AB5EC7F /* GXMobileGestaltImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXMobileGestaltImage.h"; sourceTree = "<group>"; };
+		F61BF2806310489F9FC022F3 /* GestaltX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GestaltX-Bridging-Header.h"; sourceTree = "<group>"; };
+		9E39533067ED4885A0F132BA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "LICENSE"; sourceTree = "<group>"; };
+		159FEE742AE34648AE134281 /* UPSTREAM-NOTICE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "UPSTREAM-NOTICE.md"; sourceTree = "<group>"; };
+		C81789D1E9F643A99FCB1CCB /* RetroLaunchStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroLaunchStudioView.swift; sourceTree = "<group>"; };
+		D8C9A6FD29B44C9997BD937B /* RustGestalt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RustGestalt.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F51EF3B9040A527832BEBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FE3C73F02347A26360D82EF /* RustGestalt */ = {
+			isa = PBXGroup;
+			children = (
+				449CD2491B2679C4C97050B3 /* RustGestaltApp.swift */,
+				ACEC6AEB444CB138102EAD08 /* Models */,
+				BEAC50316981A8F5AD307F22 /* Services */,
+				E9B3999E38B3DF4F61839316 /* Views */,
+				B71C5685DC12726086B35D72 /* Resources */,
+				7466D8C936D5E57CF818B755 /* Assets.xcassets */,
+				F6FB5283F34A1992659E4403 /* LogoPacks */,
+				D5913E05FC9E40588E1CFF75 /* GestaltX GPL-3.0 source */,
+			);
+			path = RustGestalt;
+			sourceTree = "<group>";
+		};
+		4688211A81A62493654CF8D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5BF48AA40CAD7891EB709FC /* RustGestalt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A9E7ECAD1E41B9097B2C9DC = {
+			isa = PBXGroup;
+			children = (
+				0FE3C73F02347A26360D82EF /* RustGestalt */,
+				8E2A59E3095742F355AB494B /* README.md */,
+				4688211A81A62493654CF8D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACEC6AEB444CB138102EAD08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B078C8E410D37CF73ECFA8B /* PairingPayload.swift */,
+				95C19118406E00702F610E1A /* Theme.swift */,
+				B14BD9C1A6F0CD85660F37C1 /* Tweak.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B71C5685DC12726086B35D72 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4940B9AB413B4AA552F1CCE2 /* InfoPlist-Additions.xml */,
+				D8C9A6FD29B44C9997BD937B /* RustGestalt.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEAC50316981A8F5AD307F22 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7501637CA125A8BF7C00259C /* AppState.swift */,
+				8B1202068478C3D4EC824BDC /* PairingManager.swift */,
+				04A8D57A8341135AE0181638 /* QRScannerView.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E9B3999E38B3DF4F61839316 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58E4D073B9F7C52A05BE17EC /* HomeView.swift */,
+				CC71FF9A514804DCE0363812 /* PairingView.swift */,
+				82CDBDC6DC23FDD4B9BAA4A7 /* RootView.swift */,
+				D21B56E0A48E49A7913DCB70 /* CreatorStudioView.swift */,
+				EBCFB03B9D6BF34443477CC6 /* SettingsView.swift */,
+				8CB74CCDF6E646CA76513295 /* TweakDetailView.swift */,
+				1BD07E38AF95C4878103F50E /* TweakLibraryView.swift */,
+				02D6D7885C1DF11E3309F8CC /* TweakRow.swift */,
+				0FC3F54FF0764A0B93FDBF70 /* MobileGestaltStudioView.swift */,
+				C81789D1E9F643A99FCB1CCB /* RetroLaunchStudioView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5913E05FC9E40588E1CFF75 /* GestaltX GPL-3.0 source */ = {
+			isa = PBXGroup;
+			children = (
+				4DC9237D423040E889D414A2 /* Capabilities.swift */,
+				7E63E97D34BA448AA06D3B3B /* DeviceBoundPlist.swift */,
+				E541D3A526864911AAB57712 /* DeviceCacheOptions.swift */,
+				281260F2BD2E44388DAFE054 /* DevicePlistIdentity.swift */,
+				313BB861A5634EB999EBECC3 /* GestaltDocument.swift */,
+				321385C4AD5E46D8A2B43FE3 /* GestaltManager.swift */,
+				54895823FD964D9A86B90818 /* Localization.swift */,
+				442857F84D684B83864475F8 /* MobileGestaltCacheLayout.swift */,
+				13DF5187358746129E8D0C60 /* SharedImportQueue.swift */,
+				B758277FAC1B42C7987D8C6D /* SharedPlistInbox.swift */,
+				E415CC8D1DB446878CA92F30 /* TemporaryExport.swift */,
+				ABC2B35B8B86424A9AC163C4 /* VersionSupport.swift */,
+				D7D46921845544F8992BE379 /* worse_query.m */,
+				FDB174A10E184C6C955A3AF1 /* GXCacheDirectory.m */,
+				EDEA13FA8F4940369C9B5BDB /* GXDeviceIdentity.m */,
+				36028F0311AF4057A1F18291 /* GXEntitlementsReader.m */,
+				E7972ED76E114CC6893AD1F1 /* GXMobileGestaltImage.m */,
+				3E78F20E11EF4BCB91B042FD /* worse_query.h */,
+				D515B6A7FBE34AA9BEE7C96A /* GXCacheDirectory.h */,
+				65F428C3A7EB42699F64507B /* GXDeviceIdentity.h */,
+				F6D98CC244C2443996304205 /* GXEntitlementsReader.h */,
+				3AA33586F25841CF9AB5EC7F /* GXMobileGestaltImage.h */,
+				F61BF2806310489F9FC022F3 /* GestaltX-Bridging-Header.h */,
+				9E39533067ED4885A0F132BA /* LICENSE */,
+				159FEE742AE34648AE134281 /* UPSTREAM-NOTICE.md */,
+			);
+			path = "Upstream/GestaltX";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D /* RustGestalt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C42E992F8137C5B02B02528 /* Build configuration list for PBXNativeTarget "RustGestalt" */;
+			buildPhases = (
+				47FB6E1697AB2EF2F3DBAD46 /* Sources */,
+				8F51EF3B9040A527832BEBBA /* Frameworks */,
+				80AC1B9B294EAEA0EE94013F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RustGestalt;
+			productName = RustGestalt;
+			productReference = F5BF48AA40CAD7891EB709FC /* RustGestalt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2720;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = D21051CA55C4951578649475 /* Build configuration list for PBXProject "RustGestalt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A9E7ECAD1E41B9097B2C9DC;
+			productRefGroup = 4688211A81A62493654CF8D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* RustGestalt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80AC1B9B294EAEA0EE94013F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BEB0A13646DB198814C495 /* Assets.xcassets in Resources */,
+				E53BD4D85D633461F53A9817 /* LogoPacks in Resources */,
+				A407CFF217FC4FED87F49D8E /* GestaltX License in Resources */,
+				4C83AD4C96614BA29C326A5E /* GestaltX source notice in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47FB6E1697AB2EF2F3DBAD46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CA960F5730A3278F558ABB /* RustGestaltApp.swift in Sources */,
+				A111A4DFED49AD87138B0004 /* PairingPayload.swift in Sources */,
+				D0F4E157621BFE50B7817093 /* Theme.swift in Sources */,
+				93BA27C54ED6AF491EA6599B /* Tweak.swift in Sources */,
+				9846887556FF52622963C8AD /* AppState.swift in Sources */,
+				CD46610A6312CDDBF0C1EA2D /* PairingManager.swift in Sources */,
+				489F7E20A72484CD8555217C /* QRScannerView.swift in Sources */,
+				B045A0E52FF8DFB2D131EBE3 /* HomeView.swift in Sources */,
+				2D95E4DB62C4E7FE34850135 /* PairingView.swift in Sources */,
+				AAC8F2C04E8DFB2315409F77 /* RootView.swift in Sources */,
+				D21B56E0A48E49A7913DCB71 /* CreatorStudioView.swift in Sources */,
+				1217CF3D2E755B8758600615 /* SettingsView.swift in Sources */,
+				BCA5155530A89210C1649342 /* TweakDetailView.swift in Sources */,
+				60AD7FFFE3D1739FDFEF7A5A /* TweakLibraryView.swift in Sources */,
+				060F9DDC1CA42E7959A0AD5D /* TweakRow.swift in Sources */,
+				21BB5B6F32C04D8297ED82E4 /* Capabilities.swift in Sources */,
+				2DB82D3AF6634D00BD1E7865 /* DeviceBoundPlist.swift in Sources */,
+				3CC44AE48BF341C2A71C6487 /* DeviceCacheOptions.swift in Sources */,
+				08F025FF5DD24E9CAAC94E6A /* DevicePlistIdentity.swift in Sources */,
+				41C0BF24500D43259A8A2D1B /* GestaltDocument.swift in Sources */,
+				B1EDBF1661794179BA7E2D0B /* GestaltManager.swift in Sources */,
+				7C67D38C900F45C68A80B8E5 /* Localization.swift in Sources */,
+				8904A5C0369E43F79A8EDA7A /* MobileGestaltCacheLayout.swift in Sources */,
+				4FD0BF4DE21B4CA297331DBA /* SharedImportQueue.swift in Sources */,
+				BA0A60505EF34C45A8DA2C9E /* SharedPlistInbox.swift in Sources */,
+				DD75DA4C18AC4984BF142AE1 /* TemporaryExport.swift in Sources */,
+				77FAA18FE72E4EA1A69B6732 /* VersionSupport.swift in Sources */,
+				0073FEFB2FD049BC99BCE7C7 /* worse_query.m in Sources */,
+				3A6AE876AA334E54900F8DB0 /* GXCacheDirectory.m in Sources */,
+				5F1593C0807841F38C70245F /* GXDeviceIdentity.m in Sources */,
+				E1FE0F7605D841DEA7B40C38 /* GXEntitlementsReader.m in Sources */,
+				F4E4A0A84C2247BCA5EE07CE /* GXMobileGestaltImage.m in Sources */,
+				7BA38AF3E5F546AE96A217ED /* MobileGestaltStudioView.swift in Sources */,
+				A88C2C3FF4A645B49D7D9B21 /* RetroLaunchStudioView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		29244383AB61C3BD2156D015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XMX3C9V8YD;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2FC723867923FBD525DCF0B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RustGestalt/RustGestalt.entitlements;
+                REGISTER_APP_GROUPS = YES;
+                SWIFT_OBJC_BRIDGING_HEADER = RustGestalt/Upstream/GestaltX/GestaltX-Bridging-Header.h;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/RustGestalt/Upstream/GestaltX";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RustGestalt;
+				INFOPLIST_KEY_NSCameraUsageDescription = "RustGestalt needs the camera to scan the pairing code shown by the Desktop Companion app.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "RustGestalt connects to the Desktop Companion app over your local network to read and apply device settings.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rustgestalt.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8679D674274389F5E78B71C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RustGestalt/RustGestalt.entitlements;
+                REGISTER_APP_GROUPS = YES;
+                SWIFT_OBJC_BRIDGING_HEADER = RustGestalt/Upstream/GestaltX/GestaltX-Bridging-Header.h;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/RustGestalt/Upstream/GestaltX";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RustGestalt;
+				INFOPLIST_KEY_NSCameraUsageDescription = "RustGestalt needs the camera to scan the pairing code shown by the Desktop Companion app.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "RustGestalt connects to the Desktop Companion app over your local network to read and apply device settings.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rustgestalt.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8FD2508D87652A0445BC2C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XMX3C9V8YD;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C42E992F8137C5B02B02528 /* Build configuration list for PBXNativeTarget "RustGestalt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC723867923FBD525DCF0B0 /* Debug */,
+				8679D674274389F5E78B71C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D21051CA55C4951578649475 /* Build configuration list for PBXProject "RustGestalt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29244383AB61C3BD2156D015 /* Debug */,
+				8FD2508D87652A0445BC2C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

@@ -1,0 +1,9 @@
+RustGestalt Logo Shelf artwork
+
+Source packs supplied by the user:
+- iOS-6-Icons-main.zip (cropped iPhone/iPod touch icons)
+- ios_7_icons_updated__by_iynque_d69mme1.zip (PNG artwork)
+- iOS_18_Icones_FR (2).zip (Light, Dark, Tinted, and Extras folders)
+- iOS 26 by Kev.zip
+
+The images are included in this private project for the user's personal setup workflow. The original pack creators and rights holders retain their respective rights. Check each source pack's terms before redistributing or publishing a build containing these images.

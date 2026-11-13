@@ -1,0 +1,38 @@
+# Xcode
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+.build/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Signing & secrets — never commit these
+*.mobileprovision
+*.p12
+*.cer
+*.p8
+*.pem
+*.keystore
+*.jks
+ExportOptions.plist
+
+# macOS
+.DS_Store
+**/.DS_Store
+__MACOSX/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# CocoaPods (not currently used, kept in case that changes)
+Pods/
+
+# Logs / temp
+*.log
+*.tmp

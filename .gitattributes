@@ -1,0 +1,14 @@
+# Normalize text, leave binaries alone
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.PNG binary
+*.JPG binary
+*.car binary
+*.icns binary
+
+# Xcode project files use their own internal format; avoid line-ending churn
+*.pbxproj -diff
+*.xcworkspacedata -diff
