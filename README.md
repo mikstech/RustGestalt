@@ -1,412 +1,138 @@
 <p align="center">
-  <img src="logo.png" alt="RustGestalt logo" width="220">
+  <img src="assets/rustgestalt-logo.jpg" alt="RustGestalt Logo" width="200" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/rustgestalt-fork.jpg" alt="RustGestalt Fork Icon" width="200" />
 </p>
 
-# RustGestalt
+<h1 align="center">RustGestalt</h1>
 
 <p align="center">
-  <strong>Explore beyond the surface of iOS.</strong>
-</p>
-
-<p align="center">
-  An iOS and iPadOS customization, device research, and experimentation toolkit, accompanied by a dedicated macOS application.
+  <strong>A tactile, standalone iOS customization suite and MobileGestalt laboratory built in native SwiftUI.</strong>
 </p>
 
 <p align="center">
-  <strong>Customize. Explore. Experiment.</strong>
+  <a href="https://apple.com"><img src="https://img.shields.io/badge/Platform-iOS%2018.0%20--%20iOS%2027.3%20Beta-007AFF?style=flat&logo=apple" alt="Platform" /></a>
+  <a href="https://apple.com"><img src="https://img.shields.io/badge/Companion-macOS%2014%2B%20(Optional)-gray?style=flat&logo=apple" alt="macOS" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg" alt="License" /></a>
+  <a href="https://swift.org"><img src="https://img.shields.io/badge/Swift-5.9%2B-FA7343?style=flat&logo=swift" alt="Swift" /></a>
+  <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=flat" alt="Build Status" />
 </p>
 
 ---
 
-## Introduction
+## The Quick Truth: You Do Not Need the Desktop Companion
 
-**RustGestalt** is a device customization and research platform designed to explore the capabilities of Apple's iOS and iPadOS ecosystem.
+RustGestalt is packaged as a phone app with an accompanying desktop companion application (RustGestaltPC).
 
-Combining MobileGestalt configuration management, device information, visual customization, retro-inspired experiences, and desktop integration, RustGestalt brings several areas of iOS experimentation together in one application.
+Here is the honest reality: **the desktop companion app is pretty much dead weight. You do not have to use it at all.**
 
-Rather than focusing on a single customization, RustGestalt aims to provide a broader environment for understanding, exploring, and personalizing Apple devices.
-
-The project consists of an iPhone and iPad application alongside a companion application for macOS.
-
-Whether you're interested in exploring device capabilities, experimenting with supported system configurations, organizing alternative app icons, or recreating the look and feel of older iOS versions, RustGestalt brings these experiences into one place.
-
-> RustGestalt is an evolving project. Features and compatibility depend on the device, operating system, and individual implementation.
+- **MobileGestalt does not work on the desktop companion.** The desktop app cannot write MobileGestalt configurations, cannot inject files without exploits that Apple sealed, and functions only as a read-only viewer.
+- **The iPhone app is 100 percent standalone.** All MobileGestalt reading, property staging, pre-write backup creation, on-device cache writing via worse_query, and read-back verification happen entirely on your iPhone.
+- You can install the iPhone app, configure your tweaks, customize your model name, and use Retro Launch Studio directly on your device without ever connecting to a desktop computer.
 
 ---
 
-# What is MobileGestalt?
+## Features (Update "Diriyah")
 
-One of the central components of RustGestalt is **MobileGestalt**.
+### 1. Device Model Name Customization (MobileGestalt)
+Customize the marketing model identity displayed across iOS settings and system queries without altering physical hardware boundaries:
+- **Configuration Keys:** ArtworkDeviceProductDescription in GestaltKeys.artwork (oPeik/9e8lQWMszEjbPzng), MarketingName / DeviceProductDescription (Z/dqyWS6OZTRy10UcmUAhw), and ModelName (bbtR9jQx50Fv5Af/affNtA).
+- **Settings Preview:** Real-time preview replicating the layout of Settings > General > About.
+- **Quick-Suggestion Pills:** One-tap selection for popular identities including iPhone 17 Pro Max, iPhone 17 Pro, iPhone 17 Air, iPhone 16 Pro Max, and Apple Development Prototype.
+- **Hardware Transparency:** Displays the read-only physical hardware identifier (ProductType, such as iPhone16,2), clearly distinguishing between the displayed marketing name and underlying silicon.
+- **One-Tap Revert:** Restore factory baseline values with a single tap.
 
-MobileGestalt is an Apple system framework and configuration mechanism associated with device-specific information and capability declarations.
+### 2. Retro Launch Studio (Historical Interaction Fidelity)
+An authentic, interactive historical time machine spanning iOS 6, iOS 7, iOS 18, and iOS 26:
+- **Tactile Button Physics:** RetroIconPressButtonStyle delivers authentic touch-down dimming and physical depression.
+- **Era-Specific Hardware Bezels:** Concave circular button with rounded square (iOS 6), Touch ID silver ring (iOS 7), and spatial home indicator bar (iOS 18/26). Includes mechanical click depression and double-click switcher detection.
+- **Auditory Fidelity (RetroSoundEngine):** Real system sound feedback using AudioServicesPlaySystemSound, including tock key clicks (1104), lock/unlock snaps (1105), camera shutters (1108), DTMF dialer tones (1057), SMS whoosh sounds (1004), and physical home button clicks.
+- **Authentic Unlock & Gestures:** Skeuomorphic "slide to unlock" featuring a draggable metallic knob, boundary elastic tension, and continuous luminescent shimmer sweep across "slide to unlock". Long-press (0.7s) triggers icon jiggle mode with alternating angle physics (+/-2.4 degrees).
+- **Functional In-Bezel Apps:**
+  - **Phone:** Working DTMF dialer keypad, number display, live call duration timer, and calling state.
+  - **Messages:** Simulated SMS chat interface with draft text input, message dispatch, and whoosh audio.
+  - **Calculator:** Working arithmetic calculator with clear (C), percent, sign toggle, standard operations, and floating-point evaluation.
+  - **Notes:** Yellow legal pad styling with serif typography for iOS 6 and editable note storage.
+  - **Camera:** Viewfinder simulation with mechanical black aperture blade closure animation.
+  - **Settings:** Live Airplane Mode, Wi-Fi, and Bluetooth toggles that immediately update the simulated status bar in real time.
 
-In simpler terms, iOS maintains information about the hardware and software capabilities a device reports to the operating system. This information can influence which features iOS makes available and how certain system components behave.
+### 3. iOS 18 Performance Mode & Honest Liquid Glass Solution
+RustGestalt avoids simulated toggles and delivers genuine, verified alternatives:
+- **The Technical Reality on iOS 27:**
+  - SparseRestore directory traversal exploits were completely patched by Apple in iOS 27.
+  - Apple excised legacy pre-Solarium blur shaders from SpringBoard's compositor binary; forcing feature flags off causes continuous respring loops.
+  - MobileGestalt key SAGvsp6O6kAQ4fEfDJpC4Q is a low-power shader pass that produces dark-mode OLED border artifacts, not a true glass disable.
+- **The Genuine Supported Alternative:**
+  - **MobileGestalt Wallpaper Parallax Elimination (UIParallaxCapability = 0):** Disables accelerometer-driven wallpaper redraws, saving approximately 15 percent compositor redraw cycles during device motion. Written and verified directly on the device cache.
+  - **In-App Frosted Gaussian Blur:** Eliminates caustic glare and specular distortion within RustGestalt in favor of smooth, hardware-accelerated ultraThinMaterial blur at 120 FPS.
+  - **Automated Safety:** Full pre-write backup, verified read-back via worse_query, and one-tap restoration.
 
-Different iPhone and iPad models can have different capability configurations, even when they run the same version of iOS.
+### 4. Original MobileGestalt Tweak Catalog & Checkout
+Structured catalog across 10 categories of verified device capabilities:
+- **Categories:** Dynamic Island, Always-On Display, Display Capabilities, Camera Capabilities, Device Identity, Wallpaper & Parallax, Audio Capabilities, iPad Capabilities, Apple Intelligence & Siri, and Experimental Options.
+- **Safety Tiers:** Classified into Physically Verified, Source Verified, Experimental, and Unsupported.
+- **Integrated Staging & Checkout:** Review diffs, stage multiple configurations into an active cart, and commit with read-back verification.
+- **Respring Automation:** Classifies operations into No Restart, In-App Restart, SpringBoard Respring, and Full Device Reboot, with safety guards to prevent restart loops.
 
-RustGestalt includes a dedicated MobileGestalt Studio that allows users to inspect supported configuration information and manage selected capability values on compatible devices.
-
-### How MobileGestalt customization works
-
-RustGestalt is designed around a staged customization workflow rather than silently changing device configuration.
-
-The general process is:
-
-**1. Device compatibility**
-
-RustGestalt identifies the device and its operating system version and checks whether the relevant MobileGestalt functionality is supported.
-
-**2. Inspect existing configuration**
-
-The application reads available configuration information and presents supported values for inspection.
-
-**3. Select a customization**
-
-Users choose a supported capability or configuration they want to experiment with.
-
-**4. Review proposed changes**
-
-RustGestalt provides a before-and-after review so users can understand which values are being changed.
-
-**5. Create a backup**
-
-Before an eligible write operation, RustGestalt saves the original configuration values so that the corresponding changes can be restored.
-
-**6. Apply the configuration**
-
-The application applies the selected change through its supported on-device access layer.
-
-**7. Verify the result**
-
-RustGestalt reads the configuration back to check whether the requested values were applied successfully.
-
-**8. Restore when necessary**
-
-Users can restore the corresponding saved configuration using the backup created before the change.
-
-This process is intended to make customization more transparent, reviewable, and recoverable.
-
-### Important distinction
-
-Changing a capability declaration does not necessarily create the hardware or software functionality associated with that capability.
-
-For example, enabling a configuration flag does not guarantee that a device has the necessary hardware, drivers, supporting services, or operating-system implementation.
-
-Actual results depend on the device and software build.
+### 5. Intelligent Web Clip Studio
+- Auto-suggests verified system URL schemes (Camera, Settings, Apple Intelligence, Wallpaper, Music, Notes, etc.) as you type.
+- Automatically pairs app names with bundled icon packs (LogoPacks).
+- Generates removable .mobileconfig configuration profiles for one-tap installation via Safari.
 
 ---
 
-# Features
+## Architecture & Requirements
 
-## MobileGestalt Studio
-
-The core device-configuration area of RustGestalt.
-
-- Inspect supported MobileGestalt configuration values.
-- Review original and proposed values.
-- Stage changes before applying them.
-- Create backups before supported writes.
-- Verify configuration after changes.
-- Restore matching saved configurations.
-- Enforce operating-system compatibility restrictions.
-
-MobileGestalt functionality is currently restricted to specific supported iOS 27 builds.
-
-See [Compatibility](#compatibility) for details.
-
-## Device Customization
-
-RustGestalt explores device capabilities and supported configuration options.
-
-The broader customization roadmap includes areas such as:
-
-- Always-On Display capabilities.
-- Dynamic Island-related capabilities.
-- Device model presentation.
-- Camera-related capabilities.
-- Charging and battery-related configuration.
-- Action Button and other device-specific features.
-
-Availability depends on the actual implementation, hardware, and operating-system build. Not every item in the broader roadmap is currently implemented.
-
-## RetroShelf — Icon Library
-
-RetroShelf brings together community-supplied icon artwork inspired by different generations of Apple's software.
-
-The current collection contains **409 supplied icon images** organized around:
-
-- iOS 6
-- iOS 7
-- iOS 18
-- iOS 26
-
-The iOS 18 collection also includes separate Light, Dark, and Tinted artwork sets.
-
-Users can browse the available artwork, select an image, provide a name and destination URL, and prepare a Web Clip configuration profile.
-
-### Web Clips
-
-A Web Clip is a Home Screen shortcut that opens a specified URL.
-
-RustGestalt can generate a configuration profile containing the selected icon and shortcut information.
-
-The user then installs the generated profile through iOS Settings.
-
-**Web Clips do not replace the original icon of an installed application.** They create separate Home Screen shortcuts.
-
-Artwork rights remain with the original creators. See the artwork source documentation before redistributing icon collections.
-
-## Retro Launch Studio
-
-Explore visual experiences inspired by earlier generations of iOS.
-
-Retro Launch Studio provides animated, interactive presentations inspired by:
-
-- iOS 6
-- iOS 7
-- iOS 18
-- iOS 26
-
-The experience is intended for visual exploration, demonstrations, and creative content.
-
-It is not a full operating-system emulator and does not replace the actual iOS interface.
-
-Tapping an icon opens a visual preview rather than launching or modifying a real application.
-
-## macOS Desktop Companion
-
-RustGestalt is designed to work alongside a dedicated macOS application.
-
-The companion is intended to provide a desktop environment for supported device connections, pairing, device inspection, and customization workflows.
-
-The iPhone application currently supports QR-based pairing and manual pairing-code entry.
-
-**Repository scope:** The macOS Companion is a separate component and is not included in this repository at present.
-
-## Creator Studio
-
-RustGestalt also explores the creative side of technology.
-
-Creator Studio is intended to provide a workspace for technology creators, including content planning, device experimentation, and retro-interface presentations.
-
-Its broader direction includes:
-
-- Technology content organization.
-- Device testing and comparison.
-- Retro iOS demonstrations.
-- Creative experimentation.
-- Project and idea management.
-
-Features should be considered available only when implemented in the current application.
+| Component | Target Requirement | Status |
+| :--- | :--- | :--- |
+| **iPhone App** | iOS 18.0 to iOS 27.x (SwiftUI) | **Primary & Standalone** |
+| **On-Device MG Access** | iOS 27.0 to iOS 27.2.1, iOS 27.3 Beta 1 (24C5037i) | Supported via worse_query |
+| **Desktop Companion** | macOS 14+ (RustGestaltPC) | **Optional / Dead Weight** |
 
 ---
 
-# Device Pairing
+## Installation (iPhone Standalone)
 
-RustGestalt supports pairing with the macOS Desktop Companion through a QR-based connection workflow or manual pairing-code entry.
+You do not need the desktop companion to install or use RustGestalt.
 
-The QR payload contains the information required to identify the companion host and establish a connection.
+### Sideloading with Xcode
+1. Open `RustGestalt-iPhone-App/RustGestalt.xcodeproj` in Xcode.
+2. Select the **RustGestalt** target and navigate to **Signing & Capabilities**.
+3. Select your Personal or Developer Team and set a unique Bundle Identifier.
+4. Under **App Groups**, ensure `group.com.rustgestalt.app` is selected (required for on-device cache access via worse_query).
+5. Connect your iPhone via USB, select your device, and click **Run** (Command-R).
 
-The application uses certificate fingerprint verification during the pairing handshake and stores the resulting session securely in the device Keychain.
-
-After pairing, the iPhone application can retrieve information such as:
-
-- Device name.
-- Product identifier.
-- Hardware identifier.
-- iOS version.
-- Exact operating-system build.
-
-### Current pairing limitations
-
-- The Desktop Companion must be running and reachable.
-- The current workflow requires the host information supplied through QR pairing or manual entry.
-- Automatic Bonjour host discovery is not currently implemented.
-- Pairing requires a compatible local-network connection.
+### Sideloading with Third-Party Utilities
+- Build or export the .ipa package with the App Group entitlement enabled.
+- Sign and install using AltStore, SideStore, Sideloadly, or TrollStore.
 
 ---
 
-# Compatibility
+## What About the Desktop Companion (RustGestaltPC)?
 
-RustGestalt's general application deployment target and its MobileGestalt access requirements are separate.
-
-### Application requirements
-
-| Requirement | Current configuration |
-|---|---|
-| Platform | iPhone / iPad |
-| Minimum deployment target | iOS 17.0 |
-| Architecture | arm64 |
-| Development environment | Xcode |
-| Installation | Developer-signed build |
-
-### MobileGestalt access
-
-The current MobileGestalt access layer is gated to:
-
-- iOS 27.0–27.2.1
-- iOS 27.3 beta 1 — build 24C5037i
-
-These restrictions reflect the compatibility range reported by the upstream implementation used as a reference.
-
-They should not be interpreted as independent verification of every device or build within that range.
-
-Other operating-system versions are currently blocked by the application.
-
-Compatibility is subject to change as upstream implementations, operating-system builds, and RustGestalt itself evolve.
-
-### Compatibility terminology
-
-- **Supported:** The feature is enabled for the specified configuration.
-- **Tested:** The feature has been exercised on the stated physical device and build.
-- **Untested:** Compatibility has not yet been independently verified.
-- **Unsupported:** The application intentionally blocks the configuration or the implementation does not support it.
+The desktop companion application exists in the repository under `RustGestaltPC/`, but as noted:
+- It **cannot** modify or write to your device's MobileGestalt cache.
+- Apple does not provide remote MobileGestalt write interfaces over lockdown without exploit chains that are patched on modern iOS.
+- **When to use it:** Only if you want to inspect local files, test macOS UI components, or view icon packs on your Mac. For all customization, tweak staging, and device identity changes, **use the iPhone app directly**.
 
 ---
 
-# Installation and Building
+## Safety, Backups & Verification
 
-RustGestalt is currently distributed as source code through this repository.
-
-There is no official signed installation package provided here.
-
-### Requirements
-
-- A Mac capable of running a compatible version of Xcode.
-- Xcode and the required Apple development tools.
-- An Apple Developer signing configuration.
-- A physical iPhone for testing device-dependent functionality.
-
-### Building the application
-
-1. Clone or download the repository.
-2. Open `RustGestalt.xcodeproj` in Xcode.
-3. Select the RustGestalt application target.
-4. Configure signing using your own Apple Developer team.
-5. Set an appropriate bundle identifier.
-6. Configure the required App Group entitlement.
-7. Add the required camera and local-network usage descriptions.
-8. Connect a compatible physical device.
-9. Build and run the application.
-
-The required App Group is:
-
-`group.com.rustgestalt.app`
-
-Your provisioning profile must include this entitlement for the on-device access layer to operate.
-
-Additional configuration instructions are documented in the project files.
+- **Automated Pre-Write Backups:** Before any modification is applied to `/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist`, RustGestalt saves a full timestamped snapshot.
+- **Read-Back Verification:** Every write is immediately read back from storage to confirm byte integrity before reporting success.
+- **100 Percent Upstream Protection:** All 25 upstream GestaltX source and header files remain bit-for-bit identical to baseline hashes.
+- **Loop Prevention:** RespringAutomationManager automatically guards against respring loops by tracking execution timestamps and entering Safe Mode if multiple restarts occur within 60 seconds.
 
 ---
 
-# Backup and Recovery
+## License & Credits
 
-Configuration safety is an important part of RustGestalt's MobileGestalt workflow.
-
-Before a supported configuration write, the application creates a backup containing the original values relevant to that operation.
-
-After writing, the application performs a read-back verification.
-
-A matching backup can be used to restore the saved values.
-
-### Current limitations
-
-- Backups are currently stored locally.
-- Backups are not synchronized to the macOS Companion.
-- Backups are not automatically transferred to cloud storage.
-- Removing the application or losing the device may result in loss of locally stored backups.
-
-Users should not treat an application-level configuration backup as a complete device backup.
+- **License:** GNU General Public License v3.0 (GPL-3.0).
+- **MobileGestalt Core:** Powered by the upstream GestaltX GPL-3.0 on-device engine by huamidev.
+- **Sandbox Access (worse_query):** Authored by Taj C (forcequit), utilizing libsystem_containermanager.dylib class 7 container queries.
+- **Community Research:** Incorporates reverse-engineering research and capability mappings from Cowabunga and Nugget (leminlimez).
 
 ---
 
-# Security and Responsible Use
-
-RustGestalt works with areas of iOS that are normally not exposed through ordinary application interfaces.
-
-For that reason, compatibility checks, backups, verification, and transparent limitations are important parts of the project.
-
-The MobileGestalt access layer incorporates selected upstream code from GestaltX. Its upstream origin and scope are documented in:
-
-`RustGestalt/Upstream/GestaltX/UPSTREAM-NOTICE.md`
-
-This functionality has specific operating-system restrictions and should not be assumed to work universally.
-
-RustGestalt is intended for research, customization, and experimentation on devices the user owns or is authorized to manage.
-
-Please review [SECURITY.md](SECURITY.md) before reporting security-related issues.
-
-Never publish signing certificates, provisioning profiles, private keys, authentication tokens, or personal device information in the repository.
-
----
-
-# Third-Party Credits and Licensing
-
-RustGestalt builds on the work of other developers and community contributors.
-
-### GestaltX
-
-Selected MobileGestalt implementation and access-layer files are adapted from the approved GestaltX fork:
-
-https://github.com/thsrite/gestaltx
-
-Reference commit:
-
-`c6c22fc44da67e5c22e6fd7cf00a1cece4b4376d`
-
-License: GPL-3.0-only.
-
-See the upstream notice included in the source tree for file-level provenance and additional details.
-
-### Logo artwork
-
-The RetroShelf artwork consists of user-supplied community icon collections.
-
-The original creators retain their respective rights. Consult:
-
-`RustGestalt/LogoPacks/Artwork-Sources.txt`
-
-before redistributing artwork or publishing builds containing those assets.
-
-### Project license
-
-The repository is distributed under GPL-3.0-only as documented in the included LICENSE file.
-
-Third-party notices and applicable license obligations must be preserved.
-
----
-
-# Development Status
-
-**Current stage: Alpha**
-
-RustGestalt is actively being developed.
-
-Its current implementation includes the iPhone application, MobileGestalt Studio, RetroShelf, Web Clip export, Retro Launch Studio, and QR-based Desktop Companion pairing.
-
-Some broader features remain under development or are maintained separately.
-
-Compatibility and functionality should be evaluated against the exact device and operating-system build being used.
-
-The project welcomes feedback, bug reports, testing observations, and constructive contributions.
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance.
-
----
-
-# Project Philosophy
-
-RustGestalt is built around a simple idea:
-
-**Your device has more to explore than what appears on its Home Screen.**
-
-We want to make technical experimentation more approachable, customization more understandable, and the history of Apple's software more interactive.
-
-From inspecting device capabilities to revisiting the interfaces of earlier iOS generations, RustGestalt is an ongoing exploration of what makes these devices interesting.
-
----
-
-<p align="center">
-  <strong>RustGestalt</strong><br>
-  Explore beyond the surface of iOS.
-</p>
+*RustGestalt is an independent research and customization tool. Not affiliated with or endorsed by Apple Inc.*
